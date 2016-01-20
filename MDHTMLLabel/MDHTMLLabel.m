@@ -427,7 +427,7 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 		
         if (self.autoDetectUrls)
         {
-            htmlText = [self detectURLsInText:_htmlText];
+            _htmlText = [self detectURLsInText:_htmlText];
         }
 		
         [self extractStyleFromText:_htmlText];
