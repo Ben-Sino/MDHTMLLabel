@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'MDHTMLLabel'
-  s.version  = '1.0.2'
+  s.version  = '1.0.2.1'
   s.license  = 'MIT'
   s.summary  = 'A lightweight, easy to use replacement for UILabel which allows you to fully customize the appearence of text using HTML.'
   s.homepage = 'https://github.com/mattdonnelly/MDHTMLLabel'
