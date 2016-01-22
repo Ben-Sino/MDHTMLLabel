@@ -423,7 +423,8 @@ static inline CGSize CTFramesetterSuggestFrameSizeForAttributedStringWithConstra
 
     if (_htmlText)
     {
-        htmlText = [_htmlText stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+        _htmlText = [_htmlText stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
+        _htmlText = [_htmlText stringByReplacingOccurrencesOfString:@"</br>" withString:@"\n"];
 		
         if (self.autoDetectUrls)
         {
